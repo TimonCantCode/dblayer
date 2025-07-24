@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 2rem auto;
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.logo-header {
+    text-align: right;
+    margin-bottom: 1rem;
+}
+
+.iu-logo {
+    width: 120px;
+    height: auto;
+    display: block;
+    margin: 0;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.profile-info h2 {
+    margin: 0;
+}
+
+.field {
+    margin: 0.5rem 0;
+}
+
+.label {
+    font-weight: bold;
+}
