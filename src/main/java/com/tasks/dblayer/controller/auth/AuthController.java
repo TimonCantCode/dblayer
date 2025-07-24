@@ -32,10 +32,11 @@ public class AuthController {
         }
     }
     
+    @PostMapping("/login")
     public String login(@ModelAttribute LogInRequest dto, HttpServletRequest request) {
         try {
             UserProfile user = this.authService.login(dto, request);
-            return "redirect:/show?id=" + user.getId();
+            return "redirect:/show/" + user.getId();
         } catch (IllegalArgumentException ex) {
             return "redirect:/signup_error";
         }
